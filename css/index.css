@@ -1,0 +1,86 @@
+/* start of general styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: Montserrat sans-serif;
+}
+
+/* end of general styling */
+
+.container {
+  width: 40vw;
+  height: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* display: flex;
+  justify-content: space-evenly; */
+  display: grid;
+  grid-template-columns: repeat(2, minmax());
+  border-radius: 10px;
+  background-color: beige;
+}
+
+.container .left {
+  background-image: url(.mages/image-product-desktop.jpg);
+  background-size: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+/* .container .left img {
+  border-radius: 10px 0 0 10px;
+} */
+
+.container .right {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container .right h5 {
+  letter-spacing: 5px;
+  font-size: 1.25rem;
+  color: hsl(165deg 2% 48%);
+}
+
+.container .right h3 {
+  font-size: 20px;
+}
+.container .right h3 + p {
+  line-height: 1.7;
+  font-size: 14px;
+  color: hsl(165deg 2% 48%);
+}
+
+.container .right p {
+  text-align: center;
+}
+
+.container .right p + p {
+  font-size: 20px;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+}
+
+.container .right p + p > del {
+  font-size: 10px;
+  color: hsl(165deg 2% 48%);
+  margin-left: 5px;
+}
+
+.container .right .add {
+  text-align: center;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 5px;
+  color: white;
+  height: ;
+  cursor: pointer;
+}
